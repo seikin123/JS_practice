@@ -95,6 +95,7 @@ function pageNum() {
     document.getElementById('page').textContent = `${current + 1}/${images.length}`;
 }
 
+// 画像を早く読み込むためのイベント
 function preloadImage(path) {
     let imgTag = document.createElement('img');
     imgTag.src = path;
